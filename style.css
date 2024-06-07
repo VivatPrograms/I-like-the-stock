@@ -152,12 +152,12 @@ video {
     .left-image {
         left: 0;
         width: 33vw;
-        bottom: 0;
+        bottom: 5vh;
     }
 
     .right-image {
         right: 0;
-        bottom: 0;
+        bottom: 5vh;;
         transform: scaleX(-100%);
         width: 40vw;
     }
@@ -165,5 +165,21 @@ video {
     .ca-code {
         position: absolute;
         top: 65vh;
+    }
+
+    video {
+        width: 450px; /* Adjust size as needed */
+        height: auto;
+        margin-top: 20px; /* Adjust spacing as needed */
+        border-radius: 1rem;
+        border: 0.25rem solid black; /* Corrected border property */
+    }
+
+    .text {
+        bottom: 20vh;
+    }
+
+    .ca-code {
+        top: 60vh;
     }
 }
