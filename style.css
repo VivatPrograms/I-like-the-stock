@@ -64,14 +64,13 @@ video {
     position: absolute;
     font-size: 100px;
     bottom: 15vh;
-    font-style: italic;
+    font-style: bold;
     color: rgb(0, 0, 0); /* Set text color to enhance the glow effect */
-    /* text-shadow: 
-        0 0 10px rgba(0, 0, 0, 0.372),
-        0 0 20px black,
-        0 0 30px black,
-        0 0 40px black,
-        0 0 50px black; */
+    stroke: none;
+}
+
+.text::first-letter {
+    color: rgb(0, 194, 0); /* Set first letter color to green */
 }
 
 .click-text {
@@ -79,6 +78,11 @@ video {
     font-size: 50px;
     top: 33vh;
     color: rgb(0, 0, 0);
+}
+
+.ca-code {
+    position: absolute;
+    top: 20vh;
 }
 
 .left-image, .right-image, .left1-image, .right1-image {
@@ -143,5 +147,23 @@ video {
         right: 0;
         top: 10vh;
         width: 33vw;
+    }
+
+    .left-image {
+        left: 0;
+        width: 33vw;
+        bottom: 0;
+    }
+
+    .right-image {
+        right: 0;
+        bottom: 0;
+        transform: scaleX(-100%);
+        width: 40vw;
+    }
+
+    .ca-code {
+        position: absolute;
+        top: 65vh;
     }
 }
