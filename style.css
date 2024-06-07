@@ -94,9 +94,9 @@ video {
 }
 
 .left1-image {
-    left: 0;
+    left: 0vw;
     width: 25vw;
-    top: 0;
+    top: 0vh;
 }
 
 .right-image {
@@ -109,7 +109,6 @@ video {
 .right1-image {
     right: 0;
     top: 0;
-    transform: scaleX(-100%);
     width: 25vw;
 }
 
@@ -143,7 +142,6 @@ video {
     .right1-image {
         right: 0;
         top: 10vh;
-        transform: scaleX(-100%);
         width: 33vw;
     }
 }
