@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    font-family: "Rubik Bubbles", system-ui;
+    -webkit-text-stroke: 0.1rem black;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("./assets/bg.png");
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    cursor: url('./assets/cursor_normal.webp'), auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.center-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.power-button {
+    background-image: url(./assets/button.png);
+    background-color: transparent;
+    background-size: cover;
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border: none;
+    cursor: pointer;
+    animation: pulsate 1.5s infinite; /* Apply the pulsate animation */
+}
+
+
+video {
+    width: 600px; /* Adjust size as needed */
+    height: auto;
+    margin-top: 20px; /* Adjust spacing as needed */
+    border-radius: 1rem;
+    border: 0.25rem solid black; /* Corrected border property */
+}
+
+.text {
+    position: absolute;
+    font-size: 100px;
+    bottom: 15vh;
+    font-style: italic;
+    color: rgb(0, 0, 0); /* Set text color to enhance the glow effect */
+    /* text-shadow: 
+        0 0 10px rgba(0, 0, 0, 0.372),
+        0 0 20px black,
+        0 0 30px black,
+        0 0 40px black,
+        0 0 50px black; */
+}
+
+
+.left-image, .right-image, .left1-image, .right1-image {
+    position: absolute;
+    width: 500px; /* Adjust size as needed */
+    height: auto;
+}
+
+.left-image {
+    left: 0;
+    width: 25vw;
+    bottom: 0;
+}
+
+.left1-image {
+    left: 0;
+    width: 25vw;
+    top: 0;
+}
+
+.right-image {
+    right: 0;
+    bottom: 0;
+    transform: scaleX(-100%);
+    width: 25vw;
+}
+
+.right1-image {
+    right: 0;
+    top: 0;
+    transform: scaleX(-100%);
+    width: 25vw;
+}
+
+.nav-items {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px; /* Adjust spacing as needed */
+    background-color: transparent;
+}
+
+.button {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+
+@media screen and (max-width: 768px) {
+    .left1-image {
+        left: 0;
+        width: 33vw;
+        top: 10vh;
+    }
+
+    .right1-image {
+        right: 0;
+        top: 10vh;
+        transform: scaleX(-100%);
+        width: 33vw;
+    }
+}
