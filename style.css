@@ -74,6 +74,12 @@ video {
         0 0 50px black; */
 }
 
+.click-text {
+    position: absolute;
+    font-size: 50px;
+    top: 33vh;
+    color: rgb(0, 0, 0);
+}
 
 .left-image, .right-image, .left1-image, .right1-image {
     position: absolute;
